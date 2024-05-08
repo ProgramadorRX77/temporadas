@@ -1,0 +1,12 @@
+
+<div style="text-align: center;">
+
+  <button (click)="cambiarTamanioTexto('small')" style="color: green;"> tamaño pequeño del texto</button>
+  <button (click)="cambiarTamanioTexto('medium')" style="color: red;"> tamaño mediano del texto</button>
+  <button (click)="cambiarTamanioTexto('large')" style="color: yellow;"> tamaño grande del texto</button>
+  <button (click)="cambiarTamanioTexto('x-large')" style="color: blue;"> tamaño super grande del texto</button>
+
+  <p [class]="tamanioTexto">Texto que cambia de tamaño</p>
+
+</div>
+<hr>

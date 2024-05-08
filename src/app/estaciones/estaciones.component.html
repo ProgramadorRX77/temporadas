@@ -1,0 +1,13 @@
+<div style="text-align: center;">
+  <h1>Este es el componente de las estaciones</h1>
+  <select (click)="mostar_opcion()" >
+    <option *ngFor="let estacion of estaciones" [value]="estacion">{{ estacion }}</option>
+  </select>
+
+  <div *ngIf="accion" [ngSwitch]="estacion">
+    <p *ngSwitchCase="'otoño'">Contenido para otoño</p>
+    <p *ngSwitchCase="'invierno'">Contenido para invierno</p>
+    <p *ngSwitchCase="'primavera'">Contenido para primavera</p>
+    <p *ngSwitchCase="'verano'">Contenido para verano</p>
+  </div>
+</div>
